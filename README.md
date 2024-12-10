@@ -7,85 +7,7 @@ AI-Powered Classification: Utilizes machine learning algorithms to accurately cl
 User -Friendly Interface: Simple and intuitive design for easy interaction.
 Real-Time Processing: Users can classify emails instantly and receive immediate feedback.
 Feedback Mechanism: Users can provide feedback on classification results to help improve the system.
-Use Case Diagram
-The following use case diagram illustrates the interactions between users and the Email Classifier system:
 
-
-+--------------------+
-|       User         |
-+--------------------+
-        |
-        |          +-----------------------------+
-        |          |      Email Classifier       |
-        |          +-----------------------------+
-        |          |                             |
-        |----------| Submit Email for Classification |
-        |          |                             |
-        |          | Receive Classification Result |
-        |          |                             |
-        |          | View Classification History   |
-        |          |                             |
-        |          | Provide Feedback              |
-        |          |                             |
-        |          | Access Help/Documentation     |
-        |          +-----------------------------+
-Activity Diagram
-The following activity diagram represents the workflow of the email classification process:
-
-
-   +------------------+
-   |      Start       |
-   +------------------+
-           |
-           v
-   +------------------+
-   | User Inputs Email|
-   +------------------+
-           |
-           v
-   +------------------+
-   |  Validate Input  |
-   +------------------+
-           |
-           v
-   +------------------+
-   |   Input Valid?   |
-   +------------------+
-      /         \
-     /           \
-   Yes            No
-   |              |
-   v              v
-+------------------+   +---------------------------+
-|   Preprocess Email|   | Prompt User to Enter Valid|
-+------------------+   |         Email             |
-           |            +---------------------------+
-           v
-   +------------------+
-   |  Vectorize Email |
-   +------------------+
-           |
-           v
-   +------------------+
-   | Predict          |
-   | Classification   |
-   +------------------+
-           |
-           v
-   +------------------+
-   |  Display Result   |
-   +------------------+
-           |
-           v
-   +------------------+
-   | User Provides     |
-   | Feedback          |
-   +------------------+
-           |
-           v
-   +------------------+
-   |       End        |
-   +------------------+
 Implementation
 Technology Stack
 Backend: Flask (Python web framework)
@@ -113,14 +35,6 @@ Future Enhancements
 Incorporate user feedback mechanisms to improve classification accuracy.
 Expand the dataset for training the model to adapt to new spam techniques.
 Implement additional features such as email categorization and prioritization.
-Installation
-To run the Email Classifier locally, follow these steps:
-
-Clone the repository.
-Navigate to the project directory.
-Install the required dependencies.
-Run the application.
-
 
 Data Collection
 The first step in building the Email Classifier involves gathering a dataset containing emails labeled as either "spam" or "not spam." For this project, we will utilize a CSV file format, where each row consists of an email message and its corresponding label. Having a well-structured dataset is crucial, as it serves as the foundation for training the machine learning model.
